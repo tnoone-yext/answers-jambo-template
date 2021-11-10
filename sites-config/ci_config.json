@@ -1,0 +1,19 @@
+{
+    "artifactStructure": {
+        "hbsTemplates": [
+            {
+                "root": "pages",
+                "pattern": "*.hbs"
+            }
+        ]
+    },
+    "buildArtifacts": {
+        "buildCmd": "npx jambo build && grunt webpack",
+        "buildSetupCmd": "npm install"
+    },
+    "installDepsCmd": "npm install -g serve && npm install",
+    "livePreview": {
+        "serveSetupCmd": "npx jambo build && grunt webpack",
+        "serveCmd": "serve -l 8080 desktop/ & grunt watch"
+    }
+}
