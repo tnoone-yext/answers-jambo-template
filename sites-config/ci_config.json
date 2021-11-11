@@ -1,9 +1,8 @@
 {
     "artifactStructure": {
-        "hbsTemplates": [
+        "assets": [
             {
-                "root": "pages",
-                "pattern": "*.hbs"
+                "root": "desktop"
             }
         ]
     },
