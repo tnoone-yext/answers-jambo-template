@@ -1,0 +1,68 @@
+---
+{
+    "stream": {
+        "$id": "soy-testing",
+        "source": "knowledgeGraph",
+        "destination": "pages",
+        "localization": {
+            "locales": ["en"]
+        },
+        "fields": [
+            "description",
+            "meta",
+            "id",
+            "timezone",
+            "name",
+            "address"
+        ],
+        "filter": {
+            "entityTypes": [
+                "location"
+            ]
+        }
+    },
+    "urlTemplate": "eps.url"
+}
+---
+
+
+{namespace eps}
+
+/**
+ * @param profile
+ */
+{template .soy}
+    <h1>Soy Template</h1>
+    <h1>{$profile.name}</h1>
+
+    {if $profile.description}
+        <p>{$profile.description}</p>
+    {/if}
+    {if $profile.address}
+    <h3>Address</h3>
+    <ul>
+        {if $profile.address.line1}
+            <li>{$profile.address.line1}</li>
+        {/if}
+        {if $profile.address.line2}
+            <li>{$profile.address.line2}</li>
+        {/if}
+        {if $profile.address.city}
+            <li>{$profile.address.city}</li>
+        {/if}
+        {if $profile.address.region}
+            <li>{$profile.address.region}</li>
+        {/if}
+        {if $profile.address.postalCode}
+            <li>{$profile.address.postalCode}</li>
+        {/if}
+    </ul>
+    {/if}
+{/template}
+
+/**
+ * @param profile
+ */
+{template .url}
+kg-soy-{$profile.uid}.html
+{/template}

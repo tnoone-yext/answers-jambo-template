@@ -4,6 +4,12 @@
             {
                 "root": "desktop"
             }
+        ],
+        "soyTemplates": [
+            {
+                "root": "locations",
+                "pattern": "*.soy"
+            }
         ]
     },
     "buildArtifacts": {
