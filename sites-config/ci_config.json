@@ -3,6 +3,9 @@
         "assets": [
             {
                 "root": "assets"
+            },
+            {
+                "root": "desktop"
             }
         ],
         "hbsTemplates": [
