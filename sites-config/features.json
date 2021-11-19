@@ -30,7 +30,8 @@
                 "c_tables.name",
                 "c_tables.id",
                 "c_owningTeam",
-                "c_owningService"
+                "c_owningService",
+                "c_land"
             ],
             "filter": {
                 "entityTypes": [
@@ -51,7 +52,8 @@
                 "c_columns.name",
                 "c_columns.c_dataType",
                 "c_columns.c_keyType",
-                "c_columns.c_nullable"
+                "c_columns.c_nullable",
+                "c_databaseName"
             ],
             "filter": {
                 "entityTypes": [

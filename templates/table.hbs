@@ -16,16 +16,29 @@
             <div class="col-span-1">
                 <div class="container py-8 px-6 mx-auto">
                     <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
-                        {{name}} 
+                        {{c_databaseName}}.{{name}} 
                     </div>
                     {{#each c_columns}}
                         <div class="col-span-5">
                             <div class="container py-8 px-6 mx-auto">
                                 <div>
                                     <p>{{name}}</p>
-                                    <p>Data Type: {{c_dataType}}</p>
-                                    <p>Key Type: {{c_keyType}}</p>
-                                    <p>Nullable? <strong>{{c_nullable}}</strong></p>
+                                    <table>
+                                        <tr>
+                                            <td>Data Type</td>
+                                            <td>{{c_dataType}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nullable?</td>
+                                            <td>{{c_nullable}}</td>
+                                        </tr>
+                                        {{>if c_keyType}}
+                                        <tr>
+                                            <td>Key Type</td>
+                                            <td>{{c_keyType}}</td>
+                                        </tr>
+                                        {{/if}}
+                                    </table>
                                 </div>
                             </div>
                         </div>
