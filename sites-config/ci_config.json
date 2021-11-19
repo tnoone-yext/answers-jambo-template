@@ -7,7 +7,7 @@
         ],
         "hbsTemplates": [
             { 
-                "root": "templates",
+                "root": "static_templates",
                 "pattern": "*.hbs"
             },
             { 
