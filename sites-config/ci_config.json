@@ -28,10 +28,10 @@
         "serveSetupCmd": "./ci/serve_setup.sh",
         "serveCmd": "./ci/serve.sh"
     },
-    "output_directories": [ "desktop" ],
+    "outputDirectories": [ "desktop" ],
     "dependencies": {
       "installDepsCmd": "./ci/install_deps.sh",
-      "required_files": [
+      "requiredFiles": [
         "package.json",
         "package-lock.json",
         "ci/install_deps.sh"
