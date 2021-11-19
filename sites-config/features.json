@@ -2,6 +2,7 @@
     "features": [
         {
             "name": "dbs",
+            "templateType": "HBS",
             "entityPageSet": {
                 "htmlTemplate": "database",
                 "urlTemplate": "database_url"
@@ -10,6 +11,7 @@
         },
         {
             "name": "tables",
+            "templateType": "HBS",
             "entityPageSet": {
                 "htmlTemplate": "table",
                 "urlTemplate": "table_url"
