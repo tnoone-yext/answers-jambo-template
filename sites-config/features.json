@@ -33,7 +33,7 @@
             ],
             "filter": {
                 "entityTypes": [
-                    "database"
+                    "ce_database"
                 ]
             },
             "localization": {
@@ -51,7 +51,7 @@
             ],
             "filter": {
                 "entityTypes": [
-                    "table"
+                    "ce_table"
                 ]
             },
             "localization": {
