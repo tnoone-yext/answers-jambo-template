@@ -22,8 +22,7 @@
     },
     "buildArtifacts": {
         "buildSetupCmd": "./ci/build_setup.sh",
-        "buildCmd": "./ci/build.sh",
-        "rebuildCmd": ""
+        "buildCmd": "./ci/build.sh"
     },
     "livePreview": {
         "serveSetupCmd": "./ci/serve_setup.sh",
