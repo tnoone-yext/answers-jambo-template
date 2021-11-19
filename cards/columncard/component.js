@@ -21,7 +21,7 @@ class columncardCardComponent extends BaseCard['columncard'] {
       // altText: '', // The alternate text for the image
       titleEventOptions: this.addDefaultEventOptions(),
       // subtitle: '', // The sub-header text of the card
-      details: profile.description, // The text in the body of the card
+      details: profile.c_tableName, // The text in the body of the card
       // If the card's details are longer than a certain character count, you can truncate the
       // text. A toggle will be supplied that can show or hide the truncated text.
       showMoreDetails: {
