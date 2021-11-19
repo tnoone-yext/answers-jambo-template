@@ -12,17 +12,27 @@
 
 <div class="container mx-auto px-4">
     <body>
-        {{>navbar}}
-            <div class="grid grid-cols-2 divide-x gap-3 pl-10">
-                <div class="col-span-1">
-                    <div class="container py-8 px-6 mx-auto">
-                        <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
-                            {{name}} 
-                        </div>
-                        <p class="mt-8 text-xl">{{>ce_columns}}</p>
+        <div class="grid grid-cols-2 divide-x gap-3 pl-10">
+            <div class="col-span-1">
+                <div class="container py-8 px-6 mx-auto">
+                    <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                        {{name}} 
                     </div>
+                    {{#each c_columns}}
+                        <div class="col-span-5">
+                            <div class="container py-8 px-6 mx-auto">
+                                <div>
+                                    <p>{{name}}</p>
+                                    <p>Data Type: {{c_dataType}}</p>
+                                    <p>Key Type: {{c_keyType}}</p>
+                                    <p>Nullable? <strong>{{c_nullable}}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    {{/#each}}
                 </div>
             </div>
+        </div>
     </body> 
 </div>
 

@@ -26,8 +26,9 @@
             "destination": "pages",
             "fields": [
                 "name",
-                "id",
-                "c_tables",
+                "id",                
+                "c_tables.name",
+                "c_tables.id",
                 "c_owningTeam",
                 "c_owningService"
             ],
@@ -47,7 +48,10 @@
             "fields": [
                 "name",
                 "id",
-                "c_columns"
+                "c_columns.name",
+                "c_columns.c_dataType",
+                "c_columns.c_keyType",
+                "c_columns.c_nullable"
             ],
             "filter": {
                 "entityTypes": [

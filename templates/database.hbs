@@ -12,17 +12,30 @@
 
 <div class="container mx-auto px-4">
     <body>
-        {{>navbar}}
-            <div class="grid grid-cols-2 divide-x gap-3 pl-10">
-                <div class="col-span-1">
-                    <div class="container py-8 px-6 mx-auto">
-                        <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
-                            {{name}} 
-                        </div>
-                        <p class="mt-8 text-xl">{{>ce_tables}}</p>
+        <div class="grid grid-cols-2 divide-x gap-3 pl-10">
+            <div class="col-span-1">
+                <div class="container py-8 px-6 mx-auto">
+                    <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                        {{name}} 
                     </div>
+                    <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                        <p>Owning team: {{c_owningTeam}}</p>
+                    </div>
+                    <div class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-4xl mb-8">
+                        <p>Owning service: {{c_owningService}}</p>
+                    </div>
+                    {{#each c_tables}}
+                        <div class="col-span-5">
+                            <div class="container py-8 px-6 mx-auto">
+                                <div>
+                                    <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-2xl mb-8 hover:text-blue-900" href={{id}}>{{name}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{/#each}}
                 </div>
             </div>
+        </div>
     </body> 
 </div>
 
