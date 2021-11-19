@@ -1,9 +1,9 @@
-{{> cards/card_component componentName='databasecard'}}
+{{> cards/card_component componentName='tablecard'}}
 
-class databasecardCardComponent extends BaseCard['databasecard'] {
+class tablecardCardComponent extends BaseCard['tablecard'] {
   constructor(config = {}, systemConfig = {}) {
     super(config, systemConfig);
-    this.setTemplate(`{{{read 'cards/databasecard/template' }}}`);
+    this.setTemplate(`{{{read 'cards/tablecard/template' }}}`);
   }
 
   /**
@@ -92,4 +92,4 @@ class databasecardCardComponent extends BaseCard['databasecard'] {
   }
 }
 
-ANSWERS.registerComponentType(databasecardCardComponent);
+ANSWERS.registerComponentType(tablecardCardComponent);
