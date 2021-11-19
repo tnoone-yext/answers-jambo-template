@@ -16,6 +16,7 @@ class columncardCardComponent extends BaseCard['columncard'] {
     
     return {
       title: profile.name, // The header text of the card
+      url: profile.c_databaseName + "-" + profile.c_tableName,
       target: linkTarget, // If the title's URL should open in a new tab, etc.
       // image: '', // The URL of the image to display on the card
       // altText: '', // The alternate text for the image
