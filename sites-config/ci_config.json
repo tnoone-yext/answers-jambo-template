@@ -21,11 +21,15 @@
         ]
     },
     "base_image_tag": "node-12.18",
-    "build_setup_cmd": "./ci/build_setup.sh",
-    "build_cmd": "./ci/build.sh",
-    "serve_setup_cmd": "./ci/serve_setup.sh",
-    "serve_cmd": "./ci/serve.sh",
-    "rebuild_cmd": "",
+    "buildArtifacts": {
+        "build_setup_cmd": "./ci/build_setup.sh",
+        "build_cmd": "./ci/build.sh",
+        "rebuild_cmd": ""
+    },
+    "livePreview": {
+        "serve_setup_cmd": "./ci/serve_setup.sh",
+        "serve_cmd": "./ci/serve.sh"
+    },
     "output_directories": [ "desktop" ],
     "dependencies": {
       "install_deps_cmd": "./ci/install_deps.sh",
