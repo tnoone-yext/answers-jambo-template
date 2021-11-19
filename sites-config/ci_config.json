@@ -20,7 +20,6 @@
             } 
         ]
     },
-    "base_image_tag": "node-12.18",
     "buildArtifacts": {
         "buildSetupCmd": "./ci/build_setup.sh",
         "buildCmd": "./ci/build.sh",
