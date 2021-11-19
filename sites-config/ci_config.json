@@ -13,11 +13,7 @@
             { 
                 "root": "partials",
                 "pattern": "*.hbs"
-            },
-            { 
-                "root": "pages",
-                "pattern": "*.hbs"
-            } 
+            }
         ]
     },
     "buildArtifacts": {
