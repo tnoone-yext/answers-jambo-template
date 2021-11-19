@@ -28,7 +28,6 @@
         "serveSetupCmd": "./ci/serve_setup.sh",
         "serveCmd": "./ci/serve.sh"
     },
-    "outputDirectories": [ "desktop" ],
     "dependencies": {
       "installDepsCmd": "./ci/install_deps.sh",
       "requiredFiles": [
