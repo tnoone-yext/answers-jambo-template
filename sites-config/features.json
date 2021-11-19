@@ -1,0 +1,44 @@
+{
+    "features": [
+        {
+            "name": "dbs",
+            "entityPageSet": {
+                
+            }
+        }
+    ],
+    "streams": [
+        {
+            "$id": "databases",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "name",
+                "id",
+                "ce_tables",
+                "c_owningTeam",
+                "c_owningService"
+            ],
+            "filter": {
+                "entityTypes": [
+                    "database"
+                ]
+            }
+        },
+        {
+            "$id": "tables",
+            "source": "knowledgeGraph",
+            "destination": "pages",
+            "fields": [
+                "name",
+                "id",
+                "ce_columns"
+            ],
+            "filter": {
+                "entityTypes": [
+                    "table"
+                ]
+            }
+        }
+    ]
+}
