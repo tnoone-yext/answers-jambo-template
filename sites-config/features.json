@@ -27,7 +27,7 @@
             "fields": [
                 "name",
                 "id",
-                "ce_tables",
+                "c_tables",
                 "c_owningTeam",
                 "c_owningService"
             ],
@@ -47,7 +47,7 @@
             "fields": [
                 "name",
                 "id",
-                "ce_columns"
+                "c_columns"
             ],
             "filter": {
                 "entityTypes": [
