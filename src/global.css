@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+
+
+h1 {
+  @apply text-4xl mb-5 font-extrabold;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h3 {
+  @apply text-lg font-bold;
+}
+
+h4 {
+  @apply text-lg font-bold;
+}
+
+p {
+  @apply opacity-90;
+}
+
+.section {
+    @apply mt-8 mb-16;
+}
+
+/* TailwindCSS Demo Styling */
+
+.grid-demo-div {
+    @apply flex flex-col gap-x-10 gap-y-10 sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5;
+}
+
+.grid-card {
+    @apply border p-10 rounded-xl text-3xl text-center text-white align-middle bg-custom-color;
+    @apply hover:bg-yellow-200 text-black cursor-pointer; 
+}
+
+/* .grid-card:hover {
+    background-color: yellow;
+    color: black;
+} */
+
+@tailwind utilities;
